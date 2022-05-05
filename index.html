@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Conversor</title>
+</head>
+
+<body>
+    <form id="formulario">
+        <input class="input" type="text" placeholder="Mensagem" name="mensagem" required>
+        <select id="select" class="input" name='select' required>
+            <option disabled selected value="">Seleciona uma opção</option>
+            <option value="BASE64">Base 64</option>
+            <option value="CIFRACESAR">Cifra de César</option>
+        </select>
+        <input type="number" class="input" id="deslocamento" placeholder="Deslocamento" name="deslocamento">
+        <div class="input">
+            <label>
+                <input type="radio" required name="radio" value="CODIFICAR" id="radioCodificar">
+                Codificar
+            </label>
+            <label style="margin-left: 15px;">
+                <input type="radio" name="radio" value="DECODIFICAR" id="radioDecodificar">
+                Decodificar
+            </label>
+        </div>
+        <button id="btnSubmit" class="button">Codificar mensagem</button>
+
+        <fieldset id="fieldset">
+            <legend id="legend"></legend>
+            <span id="resultado"></span>
+        </fieldset>
+    </form>
+    <script src="script.js"></script>
+</body>
+
+</html>
